@@ -97,6 +97,7 @@ func main() {
 	}
 	// Input Sudoku
 	f := flag.String("f", "sudoku.txt", "file input")
+	flag.Parse()
 	b, _ := ioutil.ReadFile(*f)
 	row := 0
 	col := 0
